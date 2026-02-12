@@ -1,0 +1,147 @@
+body {
+    box-sizing: border-box;
+ 
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    width: 100%;
+}
+
+.aside {
+    position: absolute;
+    right: 350px;
+    top: 240px;
+    width: 250px; /* Ajuste selon le besoin */
+}
+
+.container-conseil {
+    width: 1000px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    position: relative;
+    top: 10px;
+    right: -250px;
+
+
+}
+.container-conseil .items {
+    background-color: #fcfcfc;
+    border-radius: 5px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+#conseil img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .date {
+    position: absolute;
+    background-color: #fc84b4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0px; 
+  
+    
+  }
+  .date:hover {
+    background-color: #ebebeb;
+    color: #000;
+  }
+
+
+  /* Général */
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal de l'article */
+.article-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+/* Contenu principal */
+.article-content {
+
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.article-content h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.article-content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.article-content p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Section latérale pour l’historique */
+.article-sidebar {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-sidebar h3 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.article-sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-sidebar li:last-child {
+    border-bottom: none;
+}
+
+.article-sidebar a {
+    text-decoration: none;
+    color: #686868;
+    font-size: 1rem;
+}
+
+.article-sidebar a:hover {
+    text-decoration: underline;
+}

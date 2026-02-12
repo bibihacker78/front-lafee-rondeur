@@ -1,0 +1,50 @@
+
+.apropos {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+.apropos .blacked {
+    color: white;
+    background-color: rgba(17, 16, 16, 0.466);
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 600px;
+	text-align: center;
+	align-content: center;
+
+}
+.apropos-img img{
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;    
+    position: absolute;
+
+} 
+.apropos-item{
+    display: flex;
+}
+
+.apropos-item-text {
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+    align-content: center;
+}
+.apropos-item-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:  #db6ebc;
+
+}
+
+.apropos-item img {
+    width: 500px;
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+
+
+}

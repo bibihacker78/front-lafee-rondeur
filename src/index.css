@@ -1,0 +1,11 @@
+/* stylelint-disable at-rule-no-unknown */
+/* Tailwind directives — require Tailwind/PostCSS configured in the build */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* stylelint-enable at-rule-no-unknown */
+
+
+
+
