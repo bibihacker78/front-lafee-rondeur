@@ -55,8 +55,8 @@ function Home() {
 
       <Header navOpen={navOpen} toggleNav={toggleNav} />
       <Carousel />
-              {/* Silhouette rose */}
-             {/* Section produit avec silhouette à l'extrême gauche */}
+      {/* Silhouette rose */}
+      {/* Section produit avec silhouette à l'extrême gauche */}
       <div className="relative w-full">
         <img
           src="/assets/silhouette3.png"
@@ -66,46 +66,15 @@ function Home() {
         <Separateur titre="Nouveautés" />
         <Section produits={produits.slice(0, 5)} /> {/* Les 5 premiers produits */}
 
-        <Separateur titre="Apoutchou" />
-       
-      <div ref={cardContainerRef} className="w-full max-w-[1200px] mx-auto px-4 py-8">
-        {loading ? (
-          <p className="text-center text-gray-500">Chargement des produits...</p>
-        ) : produits.length === 0 ? (
-          <p className="text-center text-gray-500">Aucun produit trouvé.</p>
-        ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {produits.map((produit) => {
-              const img1 = produit.image_principale
-                ? encodeURI(`http://localhost:3000/${produit.image_principale}`)
-                : "/assets/placeholder.png";
-              const img2 =
-                produit.images_secondaires && produit.images_secondaires.length > 0
-                  ? encodeURI(`http://localhost:3000/${produit.images_secondaires[0]}`)
-                  : img1;
+        <Separateur titre="Apoutchou"/>
 
-              return (
-                <Card
-                  key={produit.id}
-                  id={produit.id}
-                  image={img1}
-                  imghover={img2}
-                  name={produit.nom}
-                  price={produit.prix}
-                />
-              );
-            })}
-          </div>
-        )}
+        <Section produits={produits.slice(0, 5)} /> {/* Les 5 premiers produits */}
+
       </div>
-      </div>
-
-
-      <Banner />
 
       <Separateur titre="Témoignages" />
       <div className="relative w-full my-20">
-      <img
+        <img
           src="/assets/silhouette2.png"
           alt="silhouette"
           className="absolute right-0 top-1/2 -translate-y-1/2 opacity-30 w-[300px] md:w-[400px] lg:w-[500px] pointer-events-none select-none"
